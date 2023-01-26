@@ -1,0 +1,71 @@
+<section class="fill">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-4">
+        <div class="card bg-light p-3 login-card">
+          <div class="card-tittle">
+            <h3 class="font-weight-bold text-center pt-3">Rejestracja</h3>
+          </div>
+          <div class="card-body py-3">
+          <!-- FORM -->
+            <form action="">
+              <!-- FIRST NAME -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faUser" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill" type="text" placeholder="Imię">
+                </div>
+              </div>
+              <!-- LAST NAME -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faUser" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill" type="text" placeholder="Nazwisko">
+                </div>
+              </div>
+              <!-- LOGIN -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faUser" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill" type="text" placeholder="Login">
+                </div>
+              </div>
+              <!-- E-MAIL -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faAt" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill" type="text" placeholder="E-mail">
+                </div>
+              </div>
+              <!-- PASSWORD -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faLock" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill pe-5" [type]="type" placeholder="Hasło">
+                  <span class="faEyeSlash p-2"><fa-icon (click) ="hideShowPassword()" [icon]="faEyeSlash" class="position-relative"></fa-icon></span>
+                </div>
+              </div>
+              <!-- REPEAT PASSWORD -->
+              <div class="form-group py-1">
+                <div class="input-field d-flex">
+                  <fa-icon [icon]="faLock" class="p-2 pe-4"></fa-icon>
+                  <input class="flex-fill pe-5" [type]="type" placeholder="Powtórz hasło">
+                </div>
+              </div>
+              <!-- SUBMIT -->
+              <button type="submit" class="btn btn-primary btn-block w-100 mt-4">Potwierdzam</button>
+
+              <hr class="my-4">
+
+              <!-- RETURN TO LOGIN -->
+              <div class="form-inline text-center mt-2">
+                <a href="/login" id="create-account" routerlink="/login">Powrót do logowania</a>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,1 +1,135 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --blue: #0d6efd;
+  --blue-hover: #125699;
+  --dark: #212529;
+  --shadow-sm: rgba(0,0,0,.075);
+}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 8px 0;
+}
+
+p {
+  margin: 0;
+}
+
+
+a,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--blue-hover);
+}
+
+input {
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  border-radius: 2px !important;
+  outline: none;
+  padding: 0 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input:hover {
+  border-color: var(--blue);
+  box-shadow: 0 .125rem .25rem var(--shadow-sm);
+}
+input.error {
+  border-color:red;
+  color: red;
+}
+
+
+button,
+button fa-icon {
+  vertical-align: middle;
+}
+button {
+  border-radius: 2px !important;
+}
+button fa-icon svg {
+  color: white;
+}
+
+.faEyeSlash fa-icon svg {
+  transition: all 0.1s ease;
+}
+.faEyeSlash {
+  position: absolute;
+  cursor: pointer;
+  right: 30px;
+  width: 35px;
+  border-left: 1px solid rgba(0, 0, 255, 0.2);
+}
+.faEyeSlash:hover fa-icon svg {
+  scale: 1.1;
+  color: var(--blue-hover);
+}
+
+/*-- CARD --*/
+.card {
+  border-radius: 2px !important;
+  box-shadow: 0 .125rem .25rem var(--shadow-sm);
+}
+
+.login-card fa-icon {
+  color: var(--blue);
+}
+
+.login-card a {
+  position: relative;
+}
+.login-card a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--blue);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.login-card a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+/*-- --- --*/
+
+header, footer {
+  background: var(--dark)
+}
+
+section {
+  padding:50px 0;
+}
+/* -- */
+
+.fill {
+  height: calc(100vh - 275px);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 767px) { }
+
+@media screen and (max-width: 575px) { }
